@@ -21,7 +21,7 @@ use Switch;
  
 # MySQL database connection statement
 use DBI;
-$dbh = DBI->connect("DBI:mysql:database=pitchfx2;host=localhost", 'root', 'bruc1e') 
+$dbh = DBI->connect("DBI:mysql:database=pitchfx2;host=localhost", 'root', 'passPASS!!') 
 or die $DBI::errstr;
  
 # Define XML objects
