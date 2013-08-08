@@ -1,11 +1,10 @@
+These scripts were almost entirely written by Mike Fast and downloaded from his blog a couple of years ago.  I've made a few changes to handle some events that weren't being dealt with properly and were causing things to error out.
 
-These scripts were almost entirely written by Mike fast and downloaded from his blog a couple of years ago.  I've made a few small changes.
-
-the Daily scripts are designed to run from cron in the early am and download the xml files from the previous days games.
+The Daily scripts are designed to run from cron in the early am and download the xml files from the previous days games.
 
 The Bulk scripts are for an initial population when youre doing months or years of data at a time.
 
-The mlbscraper bulk script needs to have some variables changed to set the date.  The Bulk database script processes a year at a time and takes the year as an argument.
+The mlbscraper bulk script needs to have some variables changed to set the date.  
+The Bulk database script processes a year at a time and takes the year as an argument.
 
 The xml files from mlb will be downloaded to /opt/data/pitchfx.
-

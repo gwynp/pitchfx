@@ -16,12 +16,19 @@
 #
 # Some code portions are by Joseph Adler
 # and the rest of the code is largely or completely by Mike Fast
+#
+# Gwyn - Added a couple of functions
+#
+# if youre on debian/ubuntu youll need to run this to get the perl xml libs
+#
+# apt-get install libxml-simple-perl
+
  
 use Switch;
  
 # MySQL database connection statement
 use DBI;
-$dbh = DBI->connect("DBI:mysql:database=pitchfx2;host=localhost", 'root', 'passPASS!!') 
+$dbh = DBI->connect("DBI:mysql:database=pitchfx;host=localhost", 'root', 'bruc1e') 
 or die $DBI::errstr;
  
 # Define XML objects
