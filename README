@@ -1,8 +1,8 @@
 These perl scripts were almost entirely written by Mike Fast and downloaded from his blog a couple of years ago.  I've made a few changes to handle some events that weren't being dealt with properly and were causing things to error out.
 
-The shell scripts I have written because they're quite a bit more efficient for pulling down the xml from mlb.com.  
+The shell scripts I have written to pull down the xml from mlb.com that the perl scripts will process.
 
-The Daily scripts are designed to run from cron in the early am and download the xml files from the previous days games.
+The Daily scripts are designed to run from cron in the early am (I run them at 5am EST) and download the xml files from the previous days games.
 
 The Bulk scripts are for an initial population when youre doing months or years of data at a time.
 
