@@ -19,6 +19,8 @@
 #
 # Gwyn - Added a couple of functions
 #
+# Gwyn - changed the databse settings to come from a config file
+#
 # if youre on debian/ubuntu youll need to run this to get the perl xml libs
 #
 # apt-get install libxml-simple-perl
@@ -27,8 +29,11 @@
 use Switch;
  
 # MySQL database connection statement
+
+require'./database_config.pl';
+
 use DBI;
-$dbh = DBI->connect("DBI:mysql:database=pitchfx;host=localhost", 'root', 'bruc1e') 
+$dbh = DBI->connect("DBI:mysql:$database", "$dbuser", "$dbpass") 
 or die $DBI::errstr;
  
 # Define XML objects

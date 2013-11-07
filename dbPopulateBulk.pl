@@ -20,8 +20,11 @@
 use Switch;
  
 # MySQL database connection statement
+
+require'./database_config.pl';
+
 use DBI;
-$dbh = DBI->connect("DBI:mysql:database=pitchfx;host=localhost", 'root', 'bruc1e') 
+$dbh = DBI->connect("DBI:mysql:$database", "$dbuser", "$dbpass")
 or die $DBI::errstr;
  
 # Set base directory for XML game data download URL

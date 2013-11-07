@@ -1,4 +1,6 @@
-These scripts were almost entirely written by Mike Fast and downloaded from his blog a couple of years ago.  I've made a few changes to handle some events that weren't being dealt with properly and were causing things to error out.
+These perl scripts were almost entirely written by Mike Fast and downloaded from his blog a couple of years ago.  I've made a few changes to handle some events that weren't being dealt with properly and were causing things to error out.
+
+The shell scripts I have written because they're quite a bit more efficient for pulling down the xml from mlb.com.  
 
 The Daily scripts are designed to run from cron in the early am and download the xml files from the previous days games.
 
